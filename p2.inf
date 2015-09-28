@@ -1,0 +1,12 @@
+instructions.configure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-Xms512M);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-Xmx2G);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-Declipse.p2.unsignedPolicy=allow);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-XX:MaxMetaspaceSize=128M);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-XX:MaxPermSize=256m);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-XX:+UseG1GC);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-XX:+UseStringDeduplication);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-XX:MaxGCPauseMillis=200);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addProgramArg(programArg:-nl);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addProgramArg(programArg:en_US);
+
