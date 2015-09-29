@@ -6,7 +6,8 @@ org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-XX:MaxMetaspaceSize=
 org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-XX:+UseG1GC);\
 org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-XX:+UseStringDeduplication);\
 org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-XX:MaxGCPauseMillis=200);\
-org.eclipse.equinox.p2.touchpoint.eclipse.addProgramProperty(propName:-nl,propValue:en_US);
+org.eclipse.equinox.p2.touchpoint.eclipse.addProgramArg(programArg:-nl);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addProgramArg(programArg:en_US);
 
 instructions.unconfigure=\
 org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-Xms512M);\
@@ -15,5 +16,6 @@ org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-Declipse.p2.unsig
 org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-XX:MaxMetaspaceSize=256M);\
 org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-XX:+UseG1GC);\
 org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-XX:+UseStringDeduplication);\
-org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-XX:MaxGCPauseMillis=200);\
-org.eclipse.equinox.p2.touchpoint.eclipse.removeProgramProperty(propName:-nl);
+org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-XX:MaxGCPauseMillis=200);
+org.eclipse.equinox.p2.touchpoint.eclipse.removeProgramArg(programArg:-nl);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeProgramArg(programArg:en_US);
